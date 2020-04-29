@@ -1,1 +1,2 @@
-# Software-Engineering-Improve
+# Software Engineering Improve
+Agibank coworkers study group
