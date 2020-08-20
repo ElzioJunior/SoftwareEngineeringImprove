@@ -16,7 +16,7 @@ Sem o domínio todo o sistema, todos os processos auxiliares, não servirão par
 ## Linguagem Ubíqua 
 Quando falamos de levantamento de requisitos e desenho de solução, nossa <b>estrutura antiga</b> se dava da seguinte forma:
 
-[OLD_FLOW_STRUCTURE]
+<br><img src="./resources/DDD-old-flow-structure.png" /> <br>
 
 <i>
 O analista de negócios levantava os requisitos com os usuários chave e fazia a <b>visão dele</b> de como a solução deveria ser feita.<br>
@@ -32,9 +32,7 @@ Porém inicialmente pessoas de negócio e desenvolvedores não se entendem tão 
 <br><br>
 O fluxo de levantamento de requisitos e desenho de solução fica da seguinte forma, onde a linguagem ubíqua é usada como apoio para elaboração dos modelos, sejam UML ou qualquer outro diagrama:
 
-<br><br>
-[NEW_FLOW_STRUCTURE]
-<br><br>
+<br><img src="./resources/DDD-new-flow-structure.png" /> <br>
 
 #### E como criamos o modelo de solução fazendo uso da linguagem ubíqua?
 
@@ -75,13 +73,13 @@ the ground determined by their <b>latitude</b> and <b>longitude</b>.
 
 Na conversa foram encontradas diversas palavras que sugerem domínios a serem considerados no modelo: 
 
-[MODELO-DOMINIO]
+<br><img src="./resources/DDD-first-model.png" /> <br>
  
 <br>
 
 ## Separação de Layers
 
-Um padrão comum para desenvolvimento de aplicações com DDD é a <b>separação de layers</b>.  
+Um padrão comum para desenvolvimento de aplicações com DDD é a <b>separação de layers</b>.
 <br><br>
 A separação mais comum é: <b>UI – Application Layer – Domain Layer – Infraestructure Layer</b>. 
 <br><br>
@@ -89,7 +87,7 @@ A separação mais comum é: <b>UI – Application Layer – Domain Layer – In
 <br><br>
 Podemos assumir um paradigma similar tanto em nossa arquitetura macro quanto em nossa arquitetura intra-code: 
 
- 
+<br>
 
 <b>Intra-code:</b>
 
@@ -161,7 +159,7 @@ São objetos que agrupam várias entidades associadas, que fazem parte do mesmo 
 <br>
 Customer: 
 
-[RELACIONAMENTO CUSTOMER]
+<br><img src="./resources/DDD-aggregates.png" /> <br>
  
 
 É o modelo default de definição quando criamos entidades utilizando inner objects que são outras entidades, por exemplo. 
@@ -199,8 +197,11 @@ Técnica usada pra checkar se os domínios estão como deveriam, e caso algo est
 É de grande valia o refatoramento continuo para quebrar linhas de raciocínio que não necessariamente são certas, se parado e visto de outra forma. 
 Também traz um certo risco, devido a comportamentos inesperados em grande refactoring. 
 
- 
+<br><br><br>
 
+--------------------------
+<br>Ao final podemos interpretar esses conceitos da seguinte forma:<br>
+<br><img src="./resources/DDD-concepts-dependencies.png" /> <br>
  
  <br>
 
